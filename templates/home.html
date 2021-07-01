@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Miss Barcinas</title>
+
+    <style>
+        .Slide {
+            display: none;
+        }
+
+    </style>
+
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+
+
+<body>
+    <div class="wrapper">
+        <header>
+            <nav>
+                <a href="Home.html"><img src="img/blue.jpg" alt="crayon"></a>
+                <a href="Calendar1.html"><img src="img/red.jpg" alt="crayon"></a>
+                <a href="Newsletter.html"><img src="img/yellow.jpg" alt="crayon"></a>
+                <a href="Lessons.html"><img src="img/orange.jpg" alt="crayon"></a>
+                <a href="Help.html"><img src="img/purple.jpg" alt="crayon"></a>
+                <a href="Contact.html"><img src="img/green.jpg" alt="crayon"></a>
+            </nav>
+            <h1>Welcome to Miss Barcinas' Class</h1>
+            <h2>YOUR KINDERGARTEN HOMEPAGE</h2>
+        </header>
+        <main>
+            <section class="pic">
+                <img class="Slide" src="img/one.jpg" alt="">
+                <img class="Slide" src="img/two.jpg" alt="">
+                <img class="Slide" src="img/three.jpg" alt="">
+                <img class="Slide" src="img/four.jpg" alt="">
+                <img class="Slide" src="img/five.jpg" alt="">
+                <img class="Slide" src="img/Six.jpg" alt="">
+            </section>
+            <section class="first">
+                <h3>Quick Links</h3>
+                <h3>About this Site</h3>
+                <ul>
+                    <li><a href="class.htm">class Newsletter</a></li>
+                    <li><a href="Calendar1.html">Calendar</a></li>
+                    <li><a href="Lessons.html">Lessons</a></li>
+                    <li><a href="Help.html">Helpful Links</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+                <p>Here you'll find resources to help your child succeed in this class. Our class newsletter will be posted for you to find our class updates. There will be a calendar with upcoming events. Lesson plans will be outlined if your child is absent, or you'd like to learn along with us! Helpful links are there as a ressource for extra practice with the concepts we're learning. As always, contact me via email with any questions, concerns, or ideas, and I will get back to you as quickly as possible.</p>
+            </section>
+            <section class="second">
+                <h3>About Me</h3>
+                <img src="img/Adriana_1.jpg" alt="Adriana Barcinas">
+                <p>My name is Miss Adriana Barcinas. I am so excited to teach your child, and I can't wait to get to know each of you! I graduated from Southern Utah University in 2021 with a Bachelor's in Elementary Education, a concentration in Mild-Moderate Special Education, and a minor in Early Childhood Development. I have experience working in religious education settings, elementary schools, daycares, after school programs, and online education</p>
+                <p>I was Born in Guam, and I grew up in Clinton, UT. I have a wonderful boyfriend named Ranger. I love spending time with Him and with my family, listening to and play music, relaxing in the sun, eating all kind of desserts! My very favorite thing is teaching and giving children a space where they are free to learn, grow, and be happy in the way that is the best for them.</p>
+                <p class="last">I look forward to learning with you and you child!</p>
+            </section>
+        </main>
+
+    </div>
+
+    <footer>
+        <img src="img/crayons.png" alt="Crayons">
+    </footer>
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("Slide");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {
+                myIndex = 1
+            }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 2500); // Change image every 2.5econds
+        }
+
+    </script>
+
+</body>
+
+</html>
